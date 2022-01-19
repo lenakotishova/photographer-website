@@ -98,16 +98,14 @@
   position: relative;
 }
 .hero-title {
+  
 font-family: Merriweather;
 font-style: normal;
 font-weight: bold;
 font-size: 60px;
 line-height: 120px;
 color: #FFFFFF;
-height: 120px;
-left: 0%;
-right: 0%;
-top: 0px;
+padding: -50px;
 }
 .hero-text {
   text-align: left;
