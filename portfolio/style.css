@@ -196,16 +196,7 @@ body {
   text-align: center;
   background-position: center -900px;
 }
-.section-contacts {
-  font-size: 40px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  font-family: Merriweather;
-  line-height: 80px;
-  color: #bdae82e5;
-  text-align: center;
-}
+
 .section-portfolio {
   font-size: 40px;
   font-weight: 700;
@@ -525,7 +516,16 @@ background-size: 450px 560px;
   margin-left: auto;
   margin-right: auto;
 }
-.section-contacts {  
+.section-contacts {
+  margin-top: 50px;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-family: Merriweather;
+  line-height: 80px;
+  color: #bdae82e5;
+  text-align: center; 
   text-align: center;
   position: relative;
   box-sizing: border-box;
@@ -540,26 +540,9 @@ background-size: 450px 560px;
   line-height: 80px;
   color: #bdae82e5;
   width: 1440px;
+  height: 600px;
+  background-image: url(./assets/img/contacts.png);
 }
-.section-contacts::before,
-.section-contacts::after {
-  content: '';
-  display: inline-block;
-  width: 25%;
-  height: 3px;
-  background-image: linear-gradient(to top, #bdae82e5 39px, #bdae82 39px, #bdae82 41px, #000 41px);;
-  z-index: -1;
-  position: relative;
-  vertical-align: middle;
-}
-.section-contacts:before {
-  right: 15px;
-  margin: 0 0 0 -100%;
- }
- .section-contacts:after {
-  left: 15px;
-  margin: 0 -100% 0 0;
- }
  ::placeholder {
   font-family: inherit;
   color: #bdae82;
