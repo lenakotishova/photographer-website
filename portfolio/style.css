@@ -434,7 +434,6 @@ background-size: 450px 560px;
   align-items: center;
   text-align: center;
   position: relative;
-  
   box-sizing: border-box;
   border-radius: 0px;
   z-index: 1;
@@ -525,4 +524,98 @@ background-size: 450px 560px;
   height: 505px;
   margin-left: auto;
   margin-right: auto;
+}
+.section-contacts {  
+  text-align: center;
+  position: relative;
+  box-sizing: border-box;
+  border-radius: 0px;
+  z-index: 1;
+  overflow: hidden;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-family: Merriweather;
+  line-height: 80px;
+  color: #bdae82e5;
+  width: 1440px;
+}
+.section-contacts::before,
+.section-contacts::after {
+  content: '';
+  display: inline-block;
+  width: 25%;
+  height: 3px;
+  background-image: linear-gradient(to top, #bdae82e5 39px, #bdae82 39px, #bdae82 41px, #000 41px);;
+  z-index: -1;
+  position: relative;
+  vertical-align: middle;
+}
+.section-contacts:before {
+  right: 15px;
+  margin: 0 0 0 -100%;
+ }
+ .section-contacts:after {
+  left: 15px;
+  margin: 0 -100% 0 0;
+ }
+ ::placeholder {
+  font-family: inherit;
+  color: #bdae82;
+  font-size: 20px;
+}
+.contact-me {
+  display: block;
+  margin-left: auto;
+  font-size: 14px;
+  --field-padding: 12px;
+  width: 30%;
+  line-height: 50px;
+
+}
+.contact-me p {
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 80px;
+  color: #BDAE82;
+}
+.contact-me input {
+  border: 2px solid #BDAE82;
+  background: rgba(0, 0, 0, 0.5);
+  border: 2px solid #BDAE82;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 12px;
+  border-radius: 3px;
+  width: 100%;
+  font-size: 14px;
+  padding: var(--field-padding);
+}
+.contact-me .placeholder {
+  overflow: hidden;
+  left: var(--field-padding);
+  width: calc(100% - (var(--field-padding) * 2));
+}
+
+contact-me, contact-me::before, contact-me::after {
+  box-sizing: border-box;
+}
+textarea {
+  resize: none;
+  font: inherit;
+  width:100%;
+  background: rgba(0, 0, 0, 0.5);
+border: 2px solid #BDAE82;
+box-sizing: border-box;
+border-radius: 0px;
+}
+.contact-me button {
+  display: block; 
+  float:left; 
+  width:220px;
 }
